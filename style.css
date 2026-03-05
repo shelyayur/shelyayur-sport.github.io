@@ -517,197 +517,116 @@ section {
     font-size: 0.95rem;
 }
 
-/* News Section */
-.news {
-    background: #f8f9fa;
+/* Social Media Section */
+.social {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 80px 0;
 }
 
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-}
-
-.news-card {
-    background: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border-top: 4px solid #007BFF;
-    position: relative;
-}
-
-.news-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.news-date {
-    color: #007BFF;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.news-card h3 {
-    color: #0A1D3C;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-}
-
-.delete-news {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #dc3545;
+.social .section-title {
     color: white;
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
 }
 
-.news-card:hover .delete-news {
-    display: flex;
-}
-
-.delete-news:hover {
-    background: #c82333;
-    transform: scale(1.1);
-}
-
-/* Staff Section */
-.staff {
-    background: #f8f9fa;
-}
-
-.staff-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-}
-
-.staff-card {
+.social .section-title::after {
     background: white;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    border-top: 4px solid #28a745;
+}
+
+.social-description {
     text-align: center;
-    position: relative;
-}
-
-.staff-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.staff-photo {
-    width: 100px;
-    height: 100px;
-    background: #f8f9fa;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    color: #6c757d;
-}
-
-.staff-card h3 {
-    color: #0A1D3C;
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
-}
-
-.staff-position {
-    color: #007BFF;
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.delete-staff {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: #dc3545;
-    color: white;
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-}
-
-.staff-card:hover .delete-staff {
-    display: flex;
-}
-
-.delete-staff:hover {
-    background: #c82333;
-    transform: scale(1.1);
-}
-
-/* Admin Panels */
-.admin-panel {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
     margin-bottom: 3rem;
 }
 
-.admin-form {
-    background: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 600px;
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 700px;
     margin: 0 auto;
 }
 
-.admin-form h3 {
-    color: #0A1D3C;
-    margin-bottom: 1.5rem;
+.social-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2.5rem 2rem;
     text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
 }
 
-.admin-form input,
-.admin-form textarea {
+.social-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 12px;
-    margin-bottom: 1rem;
-    border: 2px solid #e9ecef;
-    border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
-    transition: border-color 0.3s ease;
-    font-size: 1rem;
+    height: 4px;
+    transition: height 0.3s ease;
 }
 
-.admin-form input:focus,
-.admin-form textarea:focus {
-    outline: none;
-    border-color: #007BFF;
+.social-card.vk::before {
+    background: #0077FF;
 }
 
-.admin-form textarea {
-    height: 100px;
-    resize: vertical;
+.social-card.max::before {
+    background: #8B5CF6;
 }
 
-.form-buttons {
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.social-card:hover::before {
+    height: 100%;
+    opacity: 0.1;
+}
+
+.social-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
     display: flex;
-    gap: 1rem;
+    align-items: center;
     justify-content: center;
-    margin-top: 1.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-card.vk .social-icon {
+    background: rgba(0, 119, 255, 0.1);
+    color: #0077FF;
+}
+
+.social-card.max .social-icon {
+    background: rgba(139, 92, 246, 0.1);
+    color: #8B5CF6;
+}
+
+.social-card:hover .social-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.social-icon svg {
+    width: 40px;
+    height: 40px;
+}
+
+.social-card h3 {
+    color: #0A1D3C;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.social-card p {
+    color: #666;
+    font-size: 0.95rem;
 }
 
 /* Contacts Section */
@@ -940,16 +859,8 @@ section {
         gap: 1rem;
     }
 
-    .news-grid {
+    .social-links {
         grid-template-columns: 1fr;
-    }
-
-    .staff-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-buttons {
-        flex-direction: column;
     }
 
     .hall-details {
@@ -964,18 +875,6 @@ section {
         margin: 10% auto;
         width: 95%;
         padding: 1.5rem;
-    }
-
-    .admin-form {
-        padding: 1.5rem;
-    }
-
-    .delete-news,
-    .delete-staff {
-        display: flex !important;
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
     }
 
     .notification {
