@@ -3,25 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Основные SEO теги -->
-    <title>Спортивный комплекс - Залы для волейбола, тенниса, бильярда и тренажерный зал</title>
-    <meta name="description" content="Современный спортивный комплекс с залами для волейбола, настольного тенниса, бильярда и тренажерным залом. Профессиональное оборудование, тренеры, расписание.">
-    <meta name="keywords" content="спортивный комплекс, волейбол, теннис, бильярд, тренажерный зал, спорт, тренировки, зал аренда">
-    
-    <!-- Open Graph для социальных сетей -->
-    <meta property="og:title" content="Спортивный комплекс - современные залы для спорта">
-    <meta property="og:description" content="Профессиональные спортивные залы с современным оборудованием">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ВАШ_ЛОГИН.github.io/sport-complex">
-    
-    <!-- Для Яндекс -->
-    <meta name="yandex-verification" content="ваш_код_верификации">
-    
-    <!-- Для Google -->
-    <meta name="google-site-verification" content="ваш_код_верификации">
-    
+    <title>Щельяюр Спортивный - Официальный сайт</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -34,8 +18,6 @@
                 <li><a href="#about">О комплексе</a></li>
                 <li><a href="#services">Залы</a></li>
                 <li><a href="#schedule">Расписание</a></li>
-                <li><a href="#news">Новости</a></li>
-                <li><a href="#staff">Сотрудники</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
             <div class="hamburger">
@@ -192,58 +174,31 @@
         </div>
     </section>
 
-    <!-- News Section -->
-    <section id="news" class="news">
+    <!-- Social Media Section -->
+    <section id="social" class="social">
         <div class="container">
-            <h2 class="section-title">Новости</h2>
-
-            <!-- Форма добавления новостей (только для директора) -->
-            <div class="admin-panel" id="newsAdminPanel" style="display: none;">
-                <div class="admin-form">
-                    <h3>Добавить новость</h3>
-                    <form id="addNewsForm">
-                        <input type="text" id="newsTitle" placeholder="Заголовок новости" required>
-                        <textarea id="newsText" placeholder="Текст новости" required></textarea>
-                        <input type="text" id="newsDate" placeholder="Дата (например, 15.12.2024)" required>
-                        <div class="form-buttons">
-                            <button type="submit" class="btn btn-primary">Добавить новость</button>
-                            <button type="button" onclick="exportData()" class="btn btn-secondary">📥 Экспорт</button>
-                            <button type="button" onclick="logoutDirector()" class="btn btn-secondary">🚪 Выйти</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Список новостей -->
-            <div class="news-grid" id="newsContainer">
-                <!-- Новости будут добавляться через JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Staff Section -->
-    <section id="staff" class="staff">
-        <div class="container">
-            <h2 class="section-title">Наши сотрудники</h2>
-
-            <!-- Форма управления сотрудниками (только для директора) -->
-            <div class="admin-panel" id="staffAdminPanel" style="display: none;">
-                <div class="admin-form">
-                    <h3>Управление сотрудниками</h3>
-                    <form id="addStaffForm">
-                        <input type="text" id="staffName" placeholder="ФИО сотрудника" required>
-                        <input type="text" id="staffPosition" placeholder="Должность" required>
-                        <textarea id="staffDescription" placeholder="Описание/обязанности"></textarea>
-                        <div class="form-buttons">
-                            <button type="submit" class="btn btn-primary">Добавить сотрудника</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Список сотрудников -->
-            <div class="staff-grid" id="staffContainer">
-                <!-- Сотрудники будут добавляться через JavaScript -->
+            <h2 class="section-title">Мы в социальных сетях</h2>
+            <p class="social-description">Следите за нашими новостями и мероприятиями</p>
+            <div class="social-links">
+                <a href="https://vk.com/club217515089" class="social-card vk" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.07 2H8.93C3.33 2 2 3.33 2 8.93v6.14C2 20.67 3.33 22 8.93 22h6.14c5.6 0 6.93-1.33 6.93-6.93V8.93C22 3.33 20.67 2 15.07 2zm3.45 14.98h-1.4c-.52 0-.68-.42-1.61-1.35-.81-.79-1.17-.89-1.37-.89-.28 0-.36.08-.36.47v1.23c0 .33-.11.53-1 .53-1.49 0-3.14-.9-4.3-2.58-1.75-2.37-2.23-4.16-2.23-4.52 0-.2.08-.39.47-.39h1.4c.35 0 .48.16.62.54.68 1.98 1.82 3.71 2.29 3.71.18 0 .26-.08.26-.54v-2.13c-.06-.97-.57-1.05-.57-1.39 0-.16.13-.31.34-.31h2.2c.29 0 .4.16.4.5v2.88c0 .29.13.4.21.4.18 0 .33-.11.67-.45 1.04-1.17 1.79-2.97 1.79-2.97.1-.21.26-.39.61-.39h1.4c.42 0 .51.21.42.5-.16.73-1.84 3.29-1.84 3.29-.15.25-.21.36 0 .65.15.21.64.63 1.03 1.07.65.73 1.14 1.34 1.27 1.76.13.43-.07.64-.5.64z"/>
+                        </svg>
+                    </div>
+                    <h3>ВКонтакте</h3>
+                    <p>Новости и фотографии</p>
+                </a>
+                
+                <a href="https://vk.com/away.php?to=https%3A%2F%2Fmax.ru%2Fid1119000585_gos&utf=1" class="social-card max" target="_blank" rel="noopener noreferrer">
+                    <div class="social-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                        </svg>
+                    </div>
+                    <h3>MAX</h3>
+                    <p>Мы в мессенджере Max</p>
+                </a>
             </div>
         </div>
     </section>
@@ -318,5 +273,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>
